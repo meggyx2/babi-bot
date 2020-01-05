@@ -22,4 +22,4 @@ bot.remove_command('help')
 async def on_ready():
   print("meg eww")
   
-bot.run("NjYyNzg1Mzc2MTU0NDE5MjEy.XhDbBA.MujjtarDz4DFqoUeWx7xZjo1l6I")
+bot.run("NjYzMzgyMTEwMTE1MjAxMDI1.XhHtBg.r8LcBQ9zLiBd7I9n8-CApwUuZVw")
