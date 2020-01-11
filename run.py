@@ -18,6 +18,7 @@ import stuff.main
 from cv import *
 
 import stuff.events
+import stuff.bot-owner-stuff
 
 bot.remove_command('help')
 
