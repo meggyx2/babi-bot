@@ -15,7 +15,7 @@ import json
 import requests
 
 import stuff.main
-import cv
+from cv import *
 
 bot.remove_command('help')
 
