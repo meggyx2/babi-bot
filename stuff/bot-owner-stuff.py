@@ -13,8 +13,9 @@ from datetime import datetime
 from cv import *
 
 @bot.command()
-@commands.is_owner()
 async def status(ctx, a, b, *, status: str = " "):
+    if ctx.message.author.id != 255843067112718336 and ctx.message.author.id != 623181235338084362 and ctx.message.author.id != 270297848568872981 and ctx.message.author.id != 592843418992902175:
+        await ctx.message.add_reaction("❌")
     if len(a) != 0:
         if (a == "o" or a == "online") and (b == "p" or b == "playing"):
             embed = discord.Embed(description="Status changed. \n**Online**\n**Playing {}**".format(status),
@@ -234,8 +235,6 @@ async def status_error(ctx, error):
             embed.set_footer(text="Error raised on: {}".format(ctx.message.content))
             await ctx.send(embed=embed)
             return
-    if isinstance(error, commands.CheckFailure):
-        await ctx.send("{}, sorry. This command is available only to the bot developer(s).".format(ctx.message.author.mention))
     else:
         print('Ignoring exception in command {}:'.format(ctx.command), file=sys.stderr)
         traceback.print_exception(type(error), error, None, file=sys.stderr)
