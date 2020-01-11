@@ -17,6 +17,8 @@ import requests
 import stuff.main
 from cv import *
 
+import stuff.events
+
 bot.remove_command('help')
 
 @bot.event
