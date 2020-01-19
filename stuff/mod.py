@@ -17,7 +17,7 @@ from cv import *
 async def bc(ctx):
     def check(m):
         return m.author.bot
-    ctx.message.delete()
+    await ctx.message.delete()
     await ctx.message.channel.purge(limit=100, check=check)
     
 @bc.error
