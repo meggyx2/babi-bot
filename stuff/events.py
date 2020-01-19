@@ -23,10 +23,10 @@ async def on_ready():
     stream1 = discord.Streaming(name="BOOST BABI", details="Boost Babi for cool perks.", url="discord.gg/babi", game="Boost Babi")
     stream2 = discord.Streaming(name="BOT BY $HIKI", details="Bot made for the Babi Discord server.", url="https://discord.gg/Qqzy2ds", game="Bot made for the Babi Discord server.")
     while True:
-        await bot.change_presence(activity=stream1)
-        await asyncio.sleep(20)
         await bot.change_presence(activity=stream2)
-        await asyncio.sleep(10)
+        await asyncio.sleep(5)
+        await bot.change_presence(activity=stream1)
+        await asyncio.sleep(60)
 
 @bot.event
 async def on_member_join(member):
