@@ -18,7 +18,7 @@ from cv import *
 @bot.event
 async def on_ready():
     print("meg eww")
-    stream1 = discord.Streaming(name="BOOST BABI", details="Boost Babi for cool perks.")
+    stream1 = discord.Streaming(name="BOOST BABI", details="Boost Babi for cool perks.", url="discord.gg/babi")
     stream2 = discord.Streaming(name="BOT BY $HIKI", details="Bot made for the Babi Discord server.", url="https://discord.gg/Qqzy2ds")
     while True:
         await bot.change_presence(activity=stream1)
