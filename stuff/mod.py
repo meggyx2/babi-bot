@@ -19,6 +19,7 @@ async def bc(ctx):
         return m.author.bot
     await ctx.message.delete()
     await ctx.message.channel.purge(limit=100, check=check)
+    await ctx.send("<a:speedclean:653273382812647425>")
     
 @bc.error
 async def bc_error(error, ctx):
