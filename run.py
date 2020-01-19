@@ -19,6 +19,7 @@ from cv import *
 
 import stuff.events
 import stuff.bot_owner
+import stuff.mod
 
 bot.remove_command('help')
 
