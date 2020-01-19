@@ -17,7 +17,7 @@ async def status(ctx, a, b, *, status: str = " "):
     if ctx.message.author.id != 255843067112718336 and ctx.message.author.id != 623181235338084362 and ctx.message.author.id != 270297848568872981 and ctx.message.author.id != 592843418992902175:
         await ctx.message.add_reaction("❌")
         return
-    else if len(a) != 0:
+    elif len(a) != 0:
         if (a == "o" or a == "online") and (b == "p" or b == "playing"):
             embed = discord.Embed(description="Status changed. \n**Online**\n**Playing {}**".format(status),
                                   color=0x000000)
