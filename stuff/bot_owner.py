@@ -13,6 +13,15 @@ from datetime import datetime
 from cv import *
 
 @bot.command()
+async def say(ctx, *, message: str):
+    if ctx.message.author.id == 660658512052879401 or ctx.message.author.id == 623181235338084362:
+        await ctx.message.delete()
+        await ctx.send(f"{message}")
+    else:
+        await ctx.message.add_reaction("❌")
+        return
+
+@bot.command()
 async def status(ctx, a, b, *, status: str = " "):
     if ctx.message.author.id != 255843067112718336 and ctx.message.author.id != 623181235338084362 and ctx.message.author.id != 270297848568872981 and ctx.message.author.id != 592843418992902175:
         await ctx.message.add_reaction("❌")
