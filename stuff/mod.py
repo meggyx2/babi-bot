@@ -12,7 +12,7 @@ from datetime import datetime
 
 from cv import *
 
-@bot.command(aliases=["botclear", "botclean", "clean", "clear", "fuckoffbots", "botclean"])
+@bot.command(aliases=["botclear", "botclean", "clean", "clear", "fuckoffbots"])
 @commands.has_permissions(manage_messages=True)
 async def bc(ctx):
     def check(m):
