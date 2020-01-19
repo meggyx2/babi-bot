@@ -22,9 +22,5 @@ import stuff.bot_owner
 import stuff.mod
 
 bot.remove_command('help')
-
-@bot.event
-async def on_ready():
-  print("meg eww")
   
 bot.run("NjYzMzgyMTEwMTE1MjAxMDI1.XhHtBg.r8LcBQ9zLiBd7I9n8-CApwUuZVw")
