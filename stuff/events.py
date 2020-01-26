@@ -29,6 +29,14 @@ async def on_ready():
     #    await asyncio.sleep(60)
 
 @bot.event
+async def on_message(message):
+    ctx = message
+    if ctx.channel.id == 633675274675814437:
+        chanWLB = bot.get_channel(668462634634575905)
+        chanGLB = bot.get_channel(668462870178037771)
+        
+    
+@bot.event
 async def on_member_join(member):
     if member.guild.id == 631921445987156019:
         chan = bot.get_channel(665508950996680705)
